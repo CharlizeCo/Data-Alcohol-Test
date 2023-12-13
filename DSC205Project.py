@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+echo "backend: TkAgg" >> ~/.matplotlib/matplotlibrc
 import matplotlib.pyplot as plt
 
 st.title("Alcohol Consumption Project")
