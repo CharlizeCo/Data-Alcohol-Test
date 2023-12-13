@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-pip install matplotlib
 import matplotlib.pyplot as plt
 
 st.title("Alcohol Consumption Project")
