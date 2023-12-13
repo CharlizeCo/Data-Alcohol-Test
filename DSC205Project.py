@@ -126,11 +126,11 @@ income_level = st.radio('Select an income level:',
 fig, ax = plt.subplots(figsize=(12, 7))
 
 if income_level != 'Select an income level:':
-    filtered_df = df2[df2['Entity'] == income_level]
+    filtered_df = df2.loc[df2['Entity'] == income_level]
     
     if not filtered_df.empty:
         
-        ax.plot(filtered_df['Year'], filtered_df['Total alcohol consumption per capita (liters of pure alcohol, projected estimates, 15+ years of age)'],
+        ax.plot(filtered_df.loc[:,'Year'], filtered_df.loc[:,'Total alcohol consumption per capita (liters of pure alcohol, projected estimates, 15+ years of age)'],
                 label = income_level, color = line_color, marker = 'o')
         
         ax.set_xlabel('Year')
